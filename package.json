@@ -1,0 +1,27 @@
+{
+  "name": "ba-record-1-frickreich",
+  "version": "1.0.0",
+  "description": "Most applications made for the web have to do with some sort of data manipulation. In order to be able to manipulate our data we have to do two things first:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D02-1/ba-record-1-FRickReich.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D02-1/ba-record-1-FRickReich/issues"
+  },
+  "homepage": "https://github.com/D02-1/ba-record-1-FRickReich#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.8.0",
+    "express": "^4.17.2",
+    "lowdb": "^1.0.0"
+  }
+}
