@@ -1,18 +1,11 @@
 {
-  "records": [
+  "records": [],
+  "orders": [
     {
-      "id": "e0s3ywpmd",
-      "title": "Futures",
-      "artist": "Jimmy Eat World",
-      "year": "2004",
-      "price": "14.99"
-    },
-    {
-      "id": "vynavobsp",
-      "title": "ABC",
-      "artist": "Hallo",
-      "year": "2004",
-      "price": "14.99"
+      "id": "54q2e7xoi",
+      "productId": "5",
+      "quantity": "2"
     }
-  ]
+  ],
+  "users": []
 }
