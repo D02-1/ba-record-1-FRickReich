@@ -3,10 +3,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const FileSync = require('lowdb/adapters/FileSync');
 const low = require('lowdb');
-const createError = require('http-errors');
 
 const { orderRoutes, recordRoute, userRoutes } = require('./routes/');
-const { security } = require('./middleware/security');
+const { security } = require('./middleware/security.js');
+const { notFound } = require('./middleware/notFound.js');
 
 const app = express();
 const port = process.env.PORT;
@@ -26,9 +26,6 @@ app.use('/api/records', recordRoute);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 
-app.all('*', (req, res) =>
-{
-    res.status(404).send(new createError.NotFound('Route existiert nicht!'));
-});
+app.all('*', notFound);
 
 app.listen(port, () => console.log(`Server läuft auf port ${ port}`));
