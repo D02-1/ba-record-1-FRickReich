@@ -1,7 +1,7 @@
 const express = require('express');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
-const { randomId } = require('../helpers/randomId');
+const { randomId } = require('../utils/randomId');
 const createError = require('http-errors');
 
 const adapter = new FileSync('db.json');

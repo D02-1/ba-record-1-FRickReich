@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const FileSync = require('lowdb/adapters/FileSync');
 const low = require('lowdb');
 
-const { orderRoutes, recordRoute, userRoutes } = require('./../routes/');
-const { security } = require('./../middleware/security');
+const { orderRoutes, recordRoute, userRoutes } = require('./routes/');
+const { security } = require('./middleware/security');
 
 const app = express();
 const port = process.env.PORT;
